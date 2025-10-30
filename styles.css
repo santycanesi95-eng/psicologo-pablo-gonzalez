@@ -421,25 +421,46 @@ section {
 }
 
 /* Botones especiales de WhatsApp e Instagram */
-.btn-whatsapp,
+.btn-whatsapp {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #25D366;  /* Verde WhatsApp */
+    color: #FFFFFF;  /* Blanco puro */
+    border-radius: 50px;
+    font-weight: 700;
+    margin-top: 0.5rem;
+    box-shadow: 0 3px 12px rgba(37, 211, 102, 0.4);
+    transition: all 0.3s ease;
+    border: none;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);  /* Sombra para mejor legibilidad */
+}
+
+.btn-whatsapp:hover {
+    background: #20BA5A;
+    color: #FFFFFF;
+    transform: scale(1.05);
+    box-shadow: 0 5px 18px rgba(37, 211, 102, 0.6);
+}
 .btn-instagram {
     display: inline-block;
     padding: 12px 30px;
-    background: white;
-    color: #2c3e50;  /* ← Color oscuro para mejor legibilidad */
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    color: #FFFFFF;  /* Blanco puro */
     border-radius: 50px;
-    font-weight: 700;  /* ← Más grueso */
+    font-weight: 700;
     margin-top: 0.5rem;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);  /* ← Sombra para destacar */
+    box-shadow: 0 3px 12px rgba(228, 64, 95, 0.4);
     transition: all 0.3s ease;
+    border: none;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
-.btn-whatsapp:hover,
+
 .btn-instagram:hover {
-    background: #f8f9fa;
-    color: #1a252f;  /* ← Aún más oscuro al pasar el mouse */
+    color: #FFFFFF;
     transform: scale(1.05);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 5px 18px rgba(228, 64, 95, 0.6);
+    filter: brightness(1.1);
 }
 
 /* Agregar ícono de color a cada botón */
@@ -452,24 +473,26 @@ section {
 }
 
 .btn-tiktok:hover {
-    background: #f8f9fa;
-    color: #000000;
+    background: #1a1a1a;
+    color: #00f2ea;  /* Cyan al hover */
     transform: scale(1.05);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 5px 18px rgba(0, 242, 234, 0.6);
 }
 
 .btn-tiktok {
     display: inline-block;
     padding: 12px 30px;
-    background: white;
-    color: #2c3e50;
+    background: #000000;  /* Negro TikTok */
+    color: #FFFFFF;  /* Blanco puro */
     border-radius: 50px;
     font-weight: 700;
     margin-top: 0.5rem;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.4);
     transition: all 0.3s ease;
-    border: 2px solid #000000;  /* Negro de TikTok */
+    border: 2px solid #00f2ea;  /* Borde cyan característico */
+    text-shadow: 0 0 8px rgba(0, 242, 234, 0.5);  /* Efecto neón */
 }
+
 
 /* ============================================
    FOOTER
